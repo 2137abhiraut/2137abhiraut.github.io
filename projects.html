@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abhishek Raut</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0,255,255,0.2);
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: cyan;
+        }
+
+        .project-description {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-badge {
+            background: rgba(0,255,255,0.2);
+            color: cyan;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid cyan;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: cyan;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .project-links a:hover {
+            background: rgba(0,255,255,0.8);
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .projects-header h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .projects-header p {
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<header class="glass">
+    <h1>Abhishek Raut</h1>
+    <p id="typing"></p>
+</header>
+
+<nav>
+    <a href="index.html#about">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<section class="projects-header card" style="max-width: 100%; background: rgba(255,255,255,0.05);">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I've worked on, showcasing my skills in web development and Python programming.</p>
+</section>
+
+<div class="projects-container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    
+    <div class="project-card">
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-description">
+            A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features a glass morphism design with smooth animations and typing effects.
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/2137abhiraut/2137abhiraut.github.io" target="_blank">View Code</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3 class="project-title">Project Title 2</h3>
+        <p class="project-description">
+            Describe your second project here. Add details about what it does, the technologies used, and what problems it solves.
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">Tech 1</span>
+            <span class="tech-badge">Tech 2</span>
+            <span class="tech-badge">Tech 3</span>
+        </div>
+        <div class="project-links">
+            <a href="#" target="_blank">View Project</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3 class="project-title">Project Title 3</h3>
+        <p class="project-description">
+            Describe your third project here. Include information about its features, technical implementation, and key achievements.
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">Tech 1</span>
+            <span class="tech-badge">Tech 2</span>
+        </div>
+        <div class="project-links">
+            <a href="#" target="_blank">View Project</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3 class="project-title">Project Title 4</h3>
+        <p class="project-description">
+            Add your fourth project. Highlight the technologies used and the impact or learning outcome from this project.
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">Tech 1</span>
+            <span class="tech-badge">Tech 2</span>
+        </div>
+        <div class="project-links">
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Abhishek Raut</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
